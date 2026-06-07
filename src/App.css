@@ -1,0 +1,72 @@
+:root{
+  --primary-color: #080fb0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-section {
+  height: 100dvh;
+  background-color: var(--primary-color);
+  position: relative;
+  overflow: hidden;
+
+}
+.hero-section>div{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[class^="HeroClaudeImage"] {
+  position: absolute;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.HeroClaudeImage1 {
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.HeroClaudeImage2 {
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.HeroClaudeImage3 {
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.HeroClaudeImage4 {
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
+.hero-content {
+  text-align: center;
+  color: white; 
+  position:relative;
+  z-index: 2;
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+.hero-content h2 {
+  font-size: 2rem;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #080fb0;
+  border: none;
+  cursor: pointer;
+  border-radius: 10rem;
+}
