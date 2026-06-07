@@ -1,73 +1,109 @@
-# React + TypeScript + Vite
+# ScrollMotion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A free and open-source scroll-driven animation website built with React, Vite, and modern web animation techniques.
 
-Currently, two official plugins are available:
+## ✨ Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ScrollMotion is an experimental web experience where animations, transitions, and visual storytelling are controlled entirely by the user's scroll position. The project demonstrates how modern web technologies can create immersive and interactive experiences without relying on traditional page navigation.
 
-## React Compiler
+This project was created as an open-source learning resource for developers interested in:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Scroll-based animations
+* Interactive storytelling
+* Modern React development
+* Performance-friendly web animations
+* Creative portfolio and landing page experiences
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Smooth scroll-driven animations
+* Video and content synchronization
+* Responsive design
+* Modern React architecture
+* Optimized performance
+* Easy customization
+* Open source and free to use
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Built With
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* React
+* Vite
+* TypeScript
+* Motion.dev
+* CSS3
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/scrollmotion.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate to the project:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd scrollmotion
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open:
+
+```text
+http://localhost:5173
+```
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## 🎯 Use Cases
+
+* Developer portfolios
+* Product showcases
+* Landing pages
+* Interactive storytelling
+* Creative agency websites
+* Experimental web projects
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+If you'd like to improve the project:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a pull request
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a star on GitHub. It helps other developers discover the project.
+
+## 📄 License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it for personal and commercial projects.
+
+---
+
+Created with ❤️ using React and modern web technologies.
