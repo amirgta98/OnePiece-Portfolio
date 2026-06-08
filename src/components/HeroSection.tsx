@@ -24,15 +24,12 @@ export default function HeroSection() {
   const cloud4Y = useTransform(scrollYProgress, [0, 1], [0, 300]);
 
   return (
-    <section
-      ref={ref}
-      className="hero-section"
-    >
+    <section ref={ref} className="hero-section">
       <div
         style={{
           position: "sticky",
           top: 0,
-          height: "100dvh", 
+          height: "100dvh",
           width: "100%",
           overflow: "hidden",
         }}
@@ -62,34 +59,41 @@ export default function HeroSection() {
         />
 
         <div className="hero-content">
-                <div style={{
-                  color: "#ffffff99",
-                  fontSize: ".9rem",
-                  letterSpacing: "4px",
-                  marginBottom: "1rem",
-                }}>
-                  WHO WE ACTULY ARE?
-                </div>
+          <div
+            style={{
+              color: "#ffffff99",
+              fontSize: ".9rem",
+              letterSpacing: "4px",
+              marginBottom: "1rem",
+            }}
+          >
+            WHO I ACTULY Am?
+          </div>
 
-                <h1 style={{
-                  fontSize: "clamp(3rem,7vw,7rem)",
-                  lineHeight: ".95",
-                  fontWeight: 900,
-                  margin: 0,
-                }}>
-                  Dokaland
-                  <br />
-                  <span style={{
-                    background: "linear-gradient(90deg,#fff,#aaa,#fff)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}>
-                    Is your online  
-                  </span>
-                  <br />
-                  Business card
-                </h1>
-
+          <h1
+            style={{
+              fontSize: "clamp(3rem,7vw,7rem)",
+              lineHeight: ".95",
+              fontWeight: 900,
+              margin: 0,
+            }}
+          >
+            Amirreza
+            <br />
+            <span
+              style={{
+                background: "linear-gradient(90deg,#fff,#aaa,#fff)",
+                WebkitBackgroundClip: "text",
+                color: "transparent",
+              }}
+            >
+              Yazdanpanah
+            </span>
+            <br />
+            Fullstack
+            <br />
+            Developer
+          </h1>
         </div>
       </div>
     </section>

@@ -23,30 +23,34 @@ const ARC_ENTRIES = [
   {
     ep: "Chapter 001",
     label: "THE BEGINNING",
-    title: "A Kid With A Keyboard",
-    body: "Born in Iran, I fell in love with the web before I understood it. No bootcamp, no CS degree — just a browser, a text editor, and a dangerous amount of curiosity. Every night was a new experiment.",
-    icon: "🌊",
+    title: "First Line of Code",
+    body:
+      "Born in Isfahan, Iran, I got into programming at around 12 years old. I started with C++ and Arduino, building small experiments and learning how software interacts with hardware. That curiosity slowly turned into a long-term obsession with the web.",
+    icon: "🌱",
   },
   {
     ep: "Chapter 047",
-    label: "THE GRAND LINE",
-    title: "Crossing Into the Unknown",
-    body: "I shipped my first real product and immediately broke production at 2 AM. That was the turning point. Pressure taught me more than any tutorial — React, Node, databases, DevOps — I learned by surviving.",
-    icon: "⚓",
+    label: "THE BUILD PHASE",
+    title: "From Code to Real Products",
+    body:
+      "Over time I moved from small projects into real-world development. I learned modern web technologies and started working professionally with React, Next.js, and .NET. This is where coding stopped being a hobby and became a career path.",
+    icon: "⚙️",
   },
   {
     ep: "Chapter 112",
-    label: "THE NEW WORLD",
-    title: "Building Dokaland",
-    body: "I wanted to give businesses a digital home — not just a website, but a full platform. Online stores, booking systems, POS. Dokaland became my Thousand Sunny: built from scratch, sail-ready, and always improving.",
-    icon: "🏴‍☠️",
+    label: "PROFESSIONAL ERA",
+    title: "Building Real Systems",
+    body:
+      "One of my key experiences was working with KingWeb.ca, a Canadian web development company, where I spent around three years building and maintaining real production systems. That experience shaped how I think about scalability, performance, and real-world delivery.",
+    icon: "🏗️",
   },
   {
-    ep: "Chapter ???",
-    label: "STILL WRITING",
-    title: "The Adventure Continues",
-    body: "Bounty: 320,000,000 Berry. Status: At large. The Marine Headquarters can't figure out what I'll build next. Neither can I — and that's the whole point.",
-    icon: "⭐",
+    ep: "Chapter FINAL",
+    label: "CURRENT STATE",
+    title: "Building What Comes Next",
+    body:
+      "Today I focus on building modern web applications using React, Next.js, and .NET. My goal is to create impactful digital products and collaborate on serious projects where engineering quality actually matters.",
+    icon: "🚀",
   },
 ];
 
@@ -368,7 +372,7 @@ export default function MyStorySection() {
         </p>
 
         <motion.a
-          href="mailto:hello@dokaland.com"
+          href="mailto:amirgta98@gmail.com"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
           style={{
@@ -388,7 +392,7 @@ export default function MyStorySection() {
             wordBreak: "break-word",
           }}
         >
-          ⚓ SEND A DEN DEN MUSHI
+          ⚓ SEND Me An Email
         </motion.a>
       </motion.div>
     </section>

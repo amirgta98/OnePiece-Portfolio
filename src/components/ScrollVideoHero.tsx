@@ -94,8 +94,7 @@ export default function ScrollVideoHero() {
                   letterSpacing: "4px",
                   marginBottom: "1rem",
                 }}>
-                  FOR MODERN BUSINESSES
-                </div>
+                 Young but experienced                </div>
 
                 <h1 style={{
                   fontSize: "clamp(3rem,7vw,7rem)",
@@ -103,17 +102,20 @@ export default function ScrollVideoHero() {
                   fontWeight: 900,
                   margin: 0,
                 }}>
-                  Dokaland Has A
+                  
+                  Worked more
+                  Worked for more  
                   <br />
                   <span style={{
                     background: "linear-gradient(90deg,#fff,#aaa,#fff)",
                     WebkitBackgroundClip: "text",
                     color: "transparent",
                   }}>
-                    Solution
+                    than 3 years
+at
                   </span>
                   <br />
-                  For You
+                  a Canadian  <br/> Startup
                 </h1>
               </motion.div>
             )}
@@ -141,17 +143,17 @@ export default function ScrollVideoHero() {
                   fontWeight: 900,
                   margin: 0,
                 }}>
-                  Online Stores
+                  Experienced in both
                   <br />
                   <span style={{
                     background: "linear-gradient(90deg,#fff,#aaa,#fff)",
                     WebkitBackgroundClip: "text",
                     color: "transparent",
                   }}>
-                    Booking Systems
+                    Frontend & Backend
                   </span>
                   <br />
-                  POS & Kiosks
+                  Development
                 </h1>
 
                 <p style={{
@@ -159,7 +161,7 @@ export default function ScrollVideoHero() {
                   color: "#ffffffcc",
                   fontSize: "1.2rem",
                 }}>
-                  Launch and manage your business from one platform.
+                 Built and launched real-world projects and understand what the market actually needs.
                 </p>
               </motion.div>
             )}
@@ -178,7 +180,7 @@ export default function ScrollVideoHero() {
                   letterSpacing: "4px",
                   marginBottom: "1rem",
                 }}>
-                  NO DEVELOPMENT TEAM REQUIRED
+                 Strong soft skills
                 </div>
 
                 <h1 style={{
@@ -187,17 +189,18 @@ export default function ScrollVideoHero() {
                   fontWeight: 900,
                   margin: 0,
                 }}>
-                  Build Your
+                  UI/UX
                   <br />
                   <span style={{
                     background: "linear-gradient(90deg,#fff,#aaa,#fff)",
                     WebkitBackgroundClip: "text",
                     color: "transparent",
                   }}>
-                    Digital Presence
+                    English and German
+
                   </span>
                   <br />
-                  In Minutes
+                 Language
                 </h1>
 
                 <p style={{
@@ -205,7 +208,7 @@ export default function ScrollVideoHero() {
                   color: "#ffffffcc",
                   fontSize: "1.2rem",
                 }}>
-                  Websites, ordering systems, reservations and more — ready to use.
+                  I would be glad to work with you.
                 </p>
               </motion.div>
             )}
@@ -213,10 +216,8 @@ export default function ScrollVideoHero() {
         </div>
       </div>
 
-      {/* NEXT SECTION
-      <div style={{ height: "100vh", background: "#111", color: "#fff" }}>
-        Next Section
-      </div> */}
+
+
     </div>
   );
 }
