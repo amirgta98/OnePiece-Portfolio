@@ -5,7 +5,6 @@ import { useRef } from "react";
 
 const Seprator = () => {
   const ref = useRef(null);
-  const containerRef = useRef(null);
 
   const isInView = useInView(ref, { once: true, margin: "-20% 0px" });
 

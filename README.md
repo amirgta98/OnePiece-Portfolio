@@ -32,14 +32,6 @@ This project was created as an open-source learning resource for developers inte
 * Motion.dev
 * CSS3
 
-## 📦 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/scrollmotion.git
-```
-
 Navigate to the project:
 
 ```bash
