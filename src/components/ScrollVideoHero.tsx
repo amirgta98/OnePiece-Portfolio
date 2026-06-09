@@ -1,11 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import {
-  motion,
-  useScroll,
-  useMotionValueEvent,
-} from "motion/react";
+import { motion, useScroll, useMotionValueEvent } from "motion/react";
 
 export default function ScrollVideoHero() {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -36,11 +32,14 @@ export default function ScrollVideoHero() {
     const video = videoRef.current;
     if (!video) return;
 
-    video.addEventListener("loadedmetadata", () => {
+    const handleLoaded = () => {
       video.currentTime = 0;
-    });
-  }, []);
+      video.pause(); // take manual control
+    };
 
+    video.addEventListener("loadedmetadata", handleLoaded);
+    return () => video.removeEventListener("loadedmetadata", handleLoaded);
+  }, []);
   const baseTextStyle: React.CSSProperties = {
     textAlign: "center",
     maxWidth: "1100px",
@@ -52,13 +51,15 @@ export default function ScrollVideoHero() {
       {/* SCROLL AREA */}
       <div ref={containerRef} style={{ height: "450vh", background: "#000" }}>
         <div style={{ position: "sticky", top: 0, height: "100vh" }}>
-          
           {/* VIDEO */}
           <video
             ref={videoRef}
             src="/video/background.mp4"
+            poster="/video/poster.png"
             muted
             playsInline
+            autoPlay
+            preload="auto"
             style={{
               width: "100%",
               height: "100%",
@@ -88,34 +89,38 @@ export default function ScrollVideoHero() {
                 exit={{ opacity: 0, y: -40 }}
                 style={baseTextStyle}
               >
-                <div style={{
-                  color: "#ffffff99",
-                  fontSize: ".9rem",
-                  letterSpacing: "4px",
-                  marginBottom: "1rem",
-                }}>
-                 Young but experienced                </div>
+                <div
+                  style={{
+                    color: "#ffffff99",
+                    fontSize: ".9rem",
+                    letterSpacing: "4px",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  Young but experienced{" "}
+                </div>
 
-                <h1 style={{
-                  fontSize: "clamp(3rem,7vw,7rem)",
-                  lineHeight: ".95",
-                  fontWeight: 900,
-                  margin: 0,
-                }}>
-                  
-                  Worked more
-                  Worked for more  
+                <h1
+                  style={{
+                    fontSize: "clamp(3rem,7vw,7rem)",
+                    lineHeight: ".95",
+                    fontWeight: 900,
+                    margin: 0,
+                  }}
+                >
+                  Worked more Worked for more
                   <br />
-                  <span style={{
-                    background: "linear-gradient(90deg,#fff,#aaa,#fff)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}>
-                    than 3 years
-at
+                  <span
+                    style={{
+                      background: "linear-gradient(90deg,#fff,#aaa,#fff)",
+                      WebkitBackgroundClip: "text",
+                      color: "transparent",
+                    }}
+                  >
+                    than 3 years at
                   </span>
                   <br />
-                  a Canadian  <br/> Startup
+                  a Canadian <br /> Startup
                 </h1>
               </motion.div>
             )}
@@ -128,40 +133,49 @@ at
                 exit={{ opacity: 0, y: -40 }}
                 style={baseTextStyle}
               >
-                <div style={{
-                  color: "#ffffff99",
-                  fontSize: ".9rem",
-                  letterSpacing: "4px",
-                  marginBottom: "1rem",
-                }}>
+                <div
+                  style={{
+                    color: "#ffffff99",
+                    fontSize: ".9rem",
+                    letterSpacing: "4px",
+                    marginBottom: "1rem",
+                  }}
+                >
                   EVERYTHING YOU NEED
                 </div>
 
-                <h1 style={{
-                  fontSize: "clamp(3rem,7vw,7rem)",
-                  lineHeight: ".95",
-                  fontWeight: 900,
-                  margin: 0,
-                }}>
+                <h1
+                  style={{
+                    fontSize: "clamp(3rem,7vw,7rem)",
+                    lineHeight: ".95",
+                    fontWeight: 900,
+                    margin: 0,
+                  }}
+                >
                   Experienced in both
                   <br />
-                  <span style={{
-                    background: "linear-gradient(90deg,#fff,#aaa,#fff)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}>
+                  <span
+                    style={{
+                      background: "linear-gradient(90deg,#fff,#aaa,#fff)",
+                      WebkitBackgroundClip: "text",
+                      color: "transparent",
+                    }}
+                  >
                     Frontend & Backend
                   </span>
                   <br />
                   Development
                 </h1>
 
-                <p style={{
-                  marginTop: "2rem",
-                  color: "#ffffffcc",
-                  fontSize: "1.2rem",
-                }}>
-                 Built and launched real-world projects and understand what the market actually needs.
+                <p
+                  style={{
+                    marginTop: "2rem",
+                    color: "#ffffffcc",
+                    fontSize: "1.2rem",
+                  }}
+                >
+                  Built and launched real-world projects and understand what the
+                  market actually needs.
                 </p>
               </motion.div>
             )}
@@ -174,40 +188,47 @@ at
                 exit={{ opacity: 0, y: -40 }}
                 style={baseTextStyle}
               >
-                <div style={{
-                  color: "#ffffff99",
-                  fontSize: ".9rem",
-                  letterSpacing: "4px",
-                  marginBottom: "1rem",
-                }}>
-                 Strong soft skills
+                <div
+                  style={{
+                    color: "#ffffff99",
+                    fontSize: ".9rem",
+                    letterSpacing: "4px",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  Strong soft skills
                 </div>
 
-                <h1 style={{
-                  fontSize: "clamp(3rem,7vw,7rem)",
-                  lineHeight: ".95",
-                  fontWeight: 900,
-                  margin: 0,
-                }}>
+                <h1
+                  style={{
+                    fontSize: "clamp(3rem,7vw,7rem)",
+                    lineHeight: ".95",
+                    fontWeight: 900,
+                    margin: 0,
+                  }}
+                >
                   UI/UX
                   <br />
-                  <span style={{
-                    background: "linear-gradient(90deg,#fff,#aaa,#fff)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent",
-                  }}>
+                  <span
+                    style={{
+                      background: "linear-gradient(90deg,#fff,#aaa,#fff)",
+                      WebkitBackgroundClip: "text",
+                      color: "transparent",
+                    }}
+                  >
                     English and German
-
                   </span>
                   <br />
-                 Language
+                  Language
                 </h1>
 
-                <p style={{
-                  marginTop: "2rem",
-                  color: "#ffffffcc",
-                  fontSize: "1.2rem",
-                }}>
+                <p
+                  style={{
+                    marginTop: "2rem",
+                    color: "#ffffffcc",
+                    fontSize: "1.2rem",
+                  }}
+                >
                   I would be glad to work with you.
                 </p>
               </motion.div>
@@ -215,9 +236,6 @@ at
           </div>
         </div>
       </div>
-
-
-
     </div>
   );
 }
